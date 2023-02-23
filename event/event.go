@@ -73,6 +73,12 @@ type EventRequestBody struct {
 	Message struct {
 		// ChatID is the chat room id, e.g. oc_7a9aa4739f81bd2e61108fecbe12bf93
 		ChatID string `json:"chat_id"`
+		// MessageID is the message id
+		MessageID string `json:"message_id"`
+		// RootID is the root message id
+		RootID string `json:"root_id"`
+		// ParentID is the parent message id
+		ParentID string `json:"parent_id"`
 		// ChatType is the chat type, options: group | p2p, e.g. group
 		ChatType string `json:"chat_type"`
 		// Content is message content, e.g. "{\"text\":\"啊实打实的 @_user_1 @_user_2\"}",
